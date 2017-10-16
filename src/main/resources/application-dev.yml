@@ -1,0 +1,21 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+
+my:
+  name: liumin
+  age: 28
+  address: bj
