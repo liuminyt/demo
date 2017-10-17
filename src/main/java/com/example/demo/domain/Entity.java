@@ -8,6 +8,8 @@ public class Entity {
     private String name;
     private String password;
 
+    public Entity(){}
+
     public Entity(String name, String password) {
         this.name = name;
         this.password = password;

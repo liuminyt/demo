@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
+import com.example.demo.domain.Entity;
 import com.example.demo.util.JsonResult;
 import com.example.demo.util.ResultCode;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,5 +30,10 @@ public class AdminController {
         }else {
             return new JsonResult(ResultCode.NOT_LOGIN, "failed !!!!", null);
         }
+    }
+
+    @RequestMapping("/login2")
+    public JsonResult login2(@RequestBody Entity entity){
+        return new JsonResult(ResultCode.SUCCESS, "ok !!!", entity);
     }
 }
