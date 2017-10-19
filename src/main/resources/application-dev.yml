@@ -19,3 +19,5 @@ my:
   name: liumin
   age: 28
   address: bj
+logging:
+  level: debug
