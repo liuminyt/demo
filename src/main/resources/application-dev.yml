@@ -5,6 +5,7 @@ spring:
     username: root
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
   jpa:
     hibernate:
       ddl-auto: update
